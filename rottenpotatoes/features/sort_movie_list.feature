@@ -19,12 +19,13 @@ Background: movies have been added to database
   | Raiders of the Lost Ark | PG     | 12-Jun-1981  |
   | Chicken Run             | G      | 21-Jun-2000  |
 
-  And I am on the RottenPotatoes home page
+  And I am on the RottenPotatoes home pagez
 
 Scenario: sort movies alphabetically
   When I follow "Movie Title"
-  # your steps here
+  Then I should see "hello" before "there"
+  Then I should see "hi" before "this"
 
 Scenario: sort movies in increasing order of release date
   When I follow "Release Date"
-  # your steps here
+  # your steps here"

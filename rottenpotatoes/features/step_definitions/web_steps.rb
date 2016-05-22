@@ -120,7 +120,7 @@ Then /^(?:|I )should see \/([^\/]*)\/$/ do |regexp|
   end
 end
 
-Then /^(?:|I )should not see "([^"]*)"$/ do |text|
+  Then /^(?:|I )should not see "([^"]*)"$/ do |text|
   if page.respond_to? :should
     page.should have_no_content(text)
   else
@@ -251,4 +251,7 @@ end
 
 Then /^show me the page$/ do
   save_and_open_page
+end
+Then(/^I should see all of the movies$/) do
+  pending # express the regexp above with the code you wish you had
 end
